@@ -1,5 +1,17 @@
-"permissions": [
-  "webRequest",
-  "webRequestBlocking",
-  "https://www.youtube.com/*"
-]
+{
+  "manifest_version": 3,
+  "name": "YouTube TV Bypass",
+  "version": "1.0",
+  "description": "Giả lập YouTube TV client để bỏ yêu cầu đăng nhập",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://youtubei.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
