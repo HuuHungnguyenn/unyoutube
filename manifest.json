@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Login Bypass Simple",
+  "version": "1.0",
+  "description": "Xóa overlay bắt đăng nhập trên YouTube để xem video công khai",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["bypass.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
